@@ -37,6 +37,7 @@ pub use value::{PrimitiveValue, Value as DicomValue};
 // re-export crates that are part of the public API
 pub use chrono;
 pub use smallvec;
+pub use snafu;
 
 /// Helper macro for constructing a DICOM primitive value,
 /// of an arbitrary variant and multiplicity.
