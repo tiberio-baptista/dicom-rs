@@ -758,7 +758,8 @@ fn value_summary(
             | VR::TM
             | VR::UC
             | VR::UI
-            | VR::UR,
+            | VR::UR
+            | VR::UT,
         ) => None,
         (false, _, _) => Some(max_characters),
     };
