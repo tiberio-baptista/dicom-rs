@@ -53,7 +53,7 @@ impl PixelDataReader for JpegAdapter {
 
         let raw = src
             .raw_pixel_data()
-            .whatever_context("Expected to have raw pixel data available")?;
+            .whatever_context::<&str, dicom_encoding::adapters::DecodeError>("Expected to have raw pixel data available")?;
 
         // Some embedded JPEGs might span multiple fragments.
         // Hence we collect all fragments into single vector
