@@ -44,7 +44,7 @@ jobs:
         with:
           toolchain: stable
           cache: true
-      - run: cargo build --no-default-features --features=image,ndarray,sop-class,rle,cli,default_windows,backtraces,inventory-registry
+      - run: cargo build --no-default-features --features=image,ndarray,sop-class,rle,cli,default_windows,inventory-registry
 
   check_macos:
     name: Check (macOS)
